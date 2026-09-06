@@ -41,7 +41,7 @@ export default function MovementDetailPage({ params }: Props) {
         </Link>
         <div className="mt-10 grid items-start gap-12 lg:grid-cols-2">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-mist">
-            <Image
+            <Image unoptimized
               src={m.image}
               alt={`${m.number} ${m.name} packaging`}
               fill

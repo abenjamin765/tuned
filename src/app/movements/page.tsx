@@ -30,7 +30,7 @@ export default function MovementsPage() {
                 href={`/movements/${m.slug}`}
                 className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-mist"
               >
-                <Image
+                <Image unoptimized
                   src={m.image}
                   alt={`${m.number} ${m.name}`}
                   fill

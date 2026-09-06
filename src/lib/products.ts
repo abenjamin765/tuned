@@ -1,3 +1,7 @@
+import { allegroImage } from '@/lib/img-allegro';
+import { andanteImage } from '@/lib/img-andante';
+import { adagioImage } from '@/lib/img-adagio';
+import { trioImage } from '@/lib/img-trio';
 export type MovementSlug = "allegro" | "andante" | "adagio";
 
 export interface Movement {
@@ -38,7 +42,7 @@ export const MOVEMENTS: Movement[] = [
       "A rising phrase for clear mornings and intentional starts. Bright, precise, composed.",
     longDescription:
       "ALLEGRO opens the day the way a score opens a movement—brisk, articulate, and deliberate. One milligram of Delta-9 THC in a lemon-lime zest mint, paired with limonene and α-pinene for a clean, ascending profile. Designed for focus without excess; presence without noise.",
-    image: "/products/allegro.jpg",
+    image: allegroImage,
     audioHint: "Short ascending staccato tones",
     frequency: 523.25,
   },
@@ -59,7 +63,7 @@ export const MOVEMENTS: Movement[] = [
       "A measured pace for conversation and ease. Warm, social, unhurried.",
     longDescription:
       "ANDANTE keeps the tempo human—neither rush nor stillness. Sweet peppermint carries β-caryophyllene and limonene through a gentle arched wave. Built for rooms where presence matters: dinner, walks, late afternoon light.",
-    image: "/products/andante.jpg",
+    image: andanteImage,
     audioHint: "Smooth mid-tempo wave tones",
     frequency: 392.0,
   },
@@ -80,7 +84,7 @@ export const MOVEMENTS: Movement[] = [
       "A descending close for evenings and recovery. Quiet, grounded, held.",
     longDescription:
       "ADAGIO is the fermata at the end of the bar—held, descending, complete. Lavender wintergreen with linalool and myrcene. One milligram, measured for rest and return. No drama. Just the close of the phrase.",
-    image: "/products/adagio.jpg",
+    image: adagioImage,
     audioHint: "Soft descending fermata tones",
     frequency: 293.66,
   },
@@ -91,7 +95,7 @@ export const TRIO = {
   subtitle: "All three movements. One box.",
   totalThc: "60mg",
   mints: 60,
-  image: "/products/trio.jpg",
+  image: trioImage,
   description:
     "ALLEGRO, ANDANTE, and ADAGIO—the full score in a single collection. Three tempos. Three intents. Sixty precise milligrams across sixty mints.",
 };

@@ -15,7 +15,7 @@ export default function BundleTrioPage() {
       <div className="shell">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative aspect-square overflow-hidden rounded-2xl bg-mist">
-            <Image
+            <Image unoptimized
               src={TRIO.image}
               alt="TUNED Trio bundle"
               fill

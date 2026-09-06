@@ -7,7 +7,7 @@ export default function TrioSection() {
     <section className="section-pad border-t border-ink/10 bg-ink text-paper">
       <div className="shell grid items-center gap-12 lg:grid-cols-2">
         <div className="relative aspect-square overflow-hidden rounded-2xl bg-navy/40">
-          <Image
+          <Image unoptimized
             src={TRIO.image}
             alt="TUNED Trio bundle — Allegro, Andante, Adagio"
             fill

@@ -32,7 +32,7 @@ export default function MovementsSection() {
               className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper transition hover:border-ink/25"
             >
               <div className="relative aspect-[4/5] overflow-hidden bg-mist">
-                <Image
+                <Image unoptimized
                   src={m.image}
                   alt={`${m.number} ${m.name} packaging`}
                   fill
