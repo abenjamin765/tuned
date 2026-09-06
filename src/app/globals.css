@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #fafaf8;
+  --ink: #1a1a1a;
+  --emerald: #1f6b4a;
+  --gold: #c4a35a;
+  --navy: #1b2a4a;
+  --mist: #e8e6e1;
+  --muted: #6b6b66;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .section-pad {
+    @apply px-6 py-20 md:px-10 md:py-28;
+  }
+  .shell {
+    @apply mx-auto w-full max-w-shell;
+  }
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-brand text-muted;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-ink px-7 py-3 text-sm font-medium tracking-wide text-paper transition hover:bg-navy;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-full border border-ink/20 px-7 py-3 text-sm font-medium tracking-wide text-ink transition hover:border-ink/50;
+  }
+  .rule {
+    @apply h-px w-full bg-ink/10;
+  }
+}
